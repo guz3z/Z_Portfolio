@@ -3,3 +3,8 @@
     height: 2.8rem;
     padding: .5rem 10rem;
 }
+
+.top-bar a {
+    color: white;
+    font-size: 1.1rem;
+}
