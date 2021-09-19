@@ -16,7 +16,7 @@
 .navbar {
     width: 85%;
     margin: auto;
-    padding: 15px 0;
+    padding: 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,12 +107,6 @@ button:hover {
     border: none;
 }
 
-#sectionAbout {
-    height: 700px;
-    background: rosybrown;
-    display: inline-block;
-    width: 100%;
-}
 
 .content p {
     margin: 20px auto;
@@ -135,5 +129,87 @@ button:hover {
     }
 }
 
+.sectionAbout {
+    height: 100vh;
+    background: rosybrown;
+    display: inline-block;
+    width: 100vw;
+}
+
+.sectionProjects {
+    height: 100vh;
+    background: black;
+    display: inline-block;
+    width: 100vw;
+    color: white;
+}
+
+.sectionContact {
+    height: 90vh;
+    background: rosybrown;
+    display: inline-block;
+    width: 100vw;
+}
+
+.footer {
+    height:10vh;
+    width: 100vw;
+    display: inline-block;
+    background: black;
+}
 
 
+
+.logoimg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    filter: invert(100%);
+
+}
+
+.navbar2 {
+    width: 100%;
+    margin: auto;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo2 {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.navbar2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 120px;
+    position: relative;
+
+}
+
+.navbar2 ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rosybrown;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar2 ul li:hover::after {
+    width: 100%;
+
+}
+
+.footertxt {
+    color: white;
+    font-family: sans-serif;
+    margin-right: 600px;
+}
