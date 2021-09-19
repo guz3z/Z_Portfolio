@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -213,3 +214,10 @@ button:hover {
     font-family: sans-serif;
     margin-right: 600px;
 }
+
+.pagesh1Txt {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
