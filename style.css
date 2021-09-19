@@ -1,13 +1,3 @@
-/* .top-bar {
-    background: #7aaec4;
-    height: 2.8rem;
-    padding: .5rem 10rem;
-}
-
-.top-bar a {
-    color: white;
-    font-size: 1.1rem;
-} */
 
 * {
     margin: 0;
@@ -79,13 +69,7 @@
     color: white;
 }
 
-.content p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-    font-size: 40px;
-    color: rosybrown;
-}
+
 
 button {
     width: 200px;
@@ -122,3 +106,34 @@ button:hover span {
 button:hover {
     border: none;
 }
+
+#sectionAbout {
+    height: 700px;
+    background: rosybrown;
+    display: inline-block;
+    width: 100%;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 35px;
+    color: rosybrown;
+    animation: type 2s steps(37) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+
+    }
+    100% {
+        width: 37ch;
+    }
+}
+
+
+
