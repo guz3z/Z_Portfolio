@@ -117,7 +117,7 @@ button:hover {
 .content p {
     margin: 20px auto;
     font-weight: 100;
-    line-height: 30px;
+    line-height: 40px;
     font-size: 35px;
     color: rosybrown;
     animation: type 2s steps(37) infinite;
