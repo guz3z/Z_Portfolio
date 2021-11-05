@@ -86,6 +86,14 @@
     width: 200px;
     height: 200px;
     margin-right: 30px;
+    box-shadow: 5px 5px 8px rgb(61, 61, 61);
+}
+
+.circleImg {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
 }
 
 
@@ -251,9 +259,8 @@ button:hover {
 
 
 .techContainer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 40%;
+    display: flex;
+    max-width: 90%;
     margin: auto;
     
 }
