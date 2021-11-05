@@ -249,6 +249,41 @@ button:hover {
 
 
 /*Section: about*/
+.dates {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.datesLi {
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    margin: auto;
+    color: white;
+}
+
+.timelineLine {
+    width: 80%;
+    margin:auto;
+    height: 7px;
+    background-color: black;
+    margin-top: -15px;
+}
+
+.circlesCont {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.circlesTime {
+    border-radius: 50%;
+    width: 70px;
+    height: 25px;
+    background-color: black;
+
+}
 
 /*section: about - tech*/
 .tech {
