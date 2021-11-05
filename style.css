@@ -251,7 +251,8 @@ button:hover {
 /*Section: about*/
 .dates {
     list-style: none;
-    padding-top: 20px;
+    padding-top: 30px;
+    
 }
 
 .datesLi {
@@ -260,6 +261,9 @@ button:hover {
     width: 67%;
     margin: auto;
     color: white;
+    margin-bottom: -18px;
+    z-index: 1;
+    
 }
 
 .timelineLine {
@@ -267,7 +271,9 @@ button:hover {
     margin:auto;
     height: 7px;
     background-color: black;
-    margin-top: -15px;
+    margin-top: -10px;
+    z-index: -1;
+    
 }
 
 .circlesCont {
@@ -275,14 +281,25 @@ button:hover {
     justify-content: space-between;
     width: 70%;
     margin: auto;
+    padding-top: 30px;
+    margin-bottom: -50px;
+  
 }
 
 .circlesTime {
-    border-radius: 50%;
-    width: 70px;
-    height: 25px;
+    border-radius: 45%;
+    width: 90px;
+    height: 30px;
     background-color: black;
+}
 
+.eighteen {
+    margin-left: 5px;
+    margin-top:-3px;
+}
+
+.twenty {
+    
 }
 
 /*section: about - tech*/
