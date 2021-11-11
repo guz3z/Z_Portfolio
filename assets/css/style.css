@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins' 'san serif';
     box-sizing: border-box;
 }
 
@@ -69,6 +69,7 @@
 .content h1 {
     font-size: 70px;
     color: white;
+    font-weight: bold;
 }
 
 .introCont {
@@ -158,17 +159,19 @@ button:hover {
 
 #sectionAbout {
     height: 100vh;
-    background: rosybrown;
     display: inline-block;
     width: 100vw;
+    font-weight: bold;
 }
+
 
 #sectionProjects {
     height: 100vh;
-    background: black;
+    background: rgb(0, 0, 0);
     display: inline-block;
     width: 100vw;
     color: white;
+    font-weight: bold;
 }
 
 #sectionContact {
@@ -176,9 +179,10 @@ button:hover {
     background: rosybrown;
     display: inline-block;
     width: 100vw;
+    font-weight: bold;
 }
 
-.footer {
+.footer2 {
     height:10vh;
     width: 100vw;
     display: inline-block;
@@ -204,6 +208,11 @@ button:hover {
     justify-content: space-between;
 }
 
+.navbar3 {
+    display: flex;
+}
+
+
 .logo2 {
     width: 70px;
     height: 70px;
@@ -213,7 +222,8 @@ button:hover {
 
 .navbar2 ul li {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin-right: 120px;
     position: relative;
 
@@ -238,122 +248,103 @@ button:hover {
 .footertxt {
     color: white;
     font-family: sans-serif;
-    margin-right: 600px;
+    margin-right: 500px;
 }
 
 .pagesh1Txt {
     font-size: 50px;
     text-align: center;
     margin-top: 10px;
-}
-
-
-/*Section: about*/
-.dates {
-    list-style: none;
-    padding-top: 30px;
-    
-}
-
-.datesLi {
-    display: flex;
-    justify-content: space-between;
-    width: 67%;
-    margin: auto;
     color: white;
-    margin-bottom: -18px;
-    z-index: 1;
-    
 }
 
-.timelineLine {
-    width: 80%;
-    margin:auto;
-    height: 7px;
-    background-color: black;
-    margin-bottom:-5px;
-    z-index: -1;
-    
+.pagesh2Txt {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
 }
 
-.circlesCont {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-    padding-top: 30px;
-    margin-bottom: -53px;
+/*Section: about My experiences*/
+.cd-h-timeline__events {
+    position: relative;
+}
   
+.cd-h-timeline__event {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
 }
-
-.circlesTime {
-    border-radius: 45%;
-    width: 90px;
-    height: 30px;
-    background-color: black;
-    cursor: pointer;
+  
+.cd-h-timeline__event--selected { 
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
 }
-
-.eighteen {
-    margin-left: 5px;
-    cursor: pointer;
+  
+.cd-h-timeline__event--enter-right, 
+  .cd-h-timeline__event--leave-right { 
+    animation-name: cd-enter-right;
 }
-
-.twenty {
-    margin-left: 4px;
-    cursor: pointer;
+  
+.cd-h-timeline__event--enter-left,  
+.cd-h-timeline__event--leave-left { 
+    animation-name: cd-enter-left;
 }
-
-.twentyone {
-    margin-right: -14px;
-    cursor: pointer;
+  
+.cd-h-timeline__event--leave-right, 
+.cd-h-timeline__event--leave-left {
+    animation-direction: reverse;
 }
-
-.present {
-    margin-right: -5px;
-    margin-bottom:3px;
-    cursor: pointer;
+  
+@keyframes cd-enter-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
-
-/*experiencee*/
-#experiencesCont {
-    max-height: 50vh;
-    height: 100%;
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 60px;
-    background-color: blue;
-}
-
-#exTitle {
-    font-size: 2rem;
-    color: green;
-    width: 100px;
-    height: 100px;
-}
-
-#years {
-    font-size: 10px;
-    color: white;
-}
-
-#exPara {
-    font-size: 0.8rem;
-    color: white;
+  
+@keyframes cd-enter-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 /*section: about - tech*/
 .tech {
     text-align: center;
-    max-height: 40vh;
+    max-height: 30vh;
+    font-size: 1rem;
+    height: 100%;
+}
+
+.mytech {
+    color: rosybrown;
 }
 
 
 
 .techContainer {
     display: flex;
-    max-width: 90%;
+    max-width: 70%;
     margin: auto;
     
 }
@@ -361,9 +352,9 @@ button:hover {
 .techCard {
     margin: auto;
     background-color: white;
-    width: 90px;
-    height: 90px;
-    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
     margin-top: 30px;
     box-shadow: 5px 5px 7px rgba(71, 18, 18, 0.3);
     cursor: pointer;
@@ -372,21 +363,21 @@ button:hover {
 }
 
 .techImg {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     margin: auto;
     margin-top: 15px;
     
 }
 
 .techNameCont {
-    padding: 20px;
+    padding: 10px;
 }
 
 #techName {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color:white;
-    text-shadow: 1px 2px black;
+    color:rosybrown;
+
 }

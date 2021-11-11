@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>document.getElementsByTagName("html")[0].className += " js";</script>
         <title>Zerh Guzman</title>
-        <link rel="shortcut icon" type="img/png" href="./img/zg.png">
-        <link href="style.css" rel="stylesheet">
+        <link rel="shortcut icon" type="img/png" href=".assets/img/zg.png">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style2.css" rel="stylesheet">
     </head>
     <body>
         <div id="sectionHomeP">
             <div class="banner">
                 <div class="navbar">
-                    <img src="./img/zgj.png" alt="ZJG logo" class="logo" title="ZJG logo">
+                    <img src="assets/img/zgj.png" alt="ZJG logo" class="logo" title="ZJG logo">
                     <ul>
                         <li><a href="#sectionHomeP">HOME</a></li>
                         <li><a href="#sectionAbout">ABOUT</a></li>
@@ -26,7 +28,7 @@
                     <div class="introCont">
                         <div class="circle">
                             <div>
-                                <img class="circleImg"src="img/me.png">
+                                <img class="circleImg"src="assets/img/me.png">
                             </div>
                         </div>
                         <h1 class="hi">Hi, I am Zerh Guzman</h1>
@@ -45,23 +47,26 @@
 
         </div>
         <div id="sectionAbout">
-            <h1 class="pagesh1Txt">About me</h1>
+            <h1 class="pagesh2Txt">About me</h1>
             <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
                 <div class="cd-h-timeline__container container">
                    <div class="cd-h-timeline__dates">
                       <div class="cd-h-timeline__line">
                          <ol>
-                            <li><a href="#0" data-date="2018" class="cd-h-timeline__date cd-h-timeline__date--selected">2018</a></li>
-                            <li><a href="#0" data-date="2020" class="cd-h-timeline__date">2020</a></li>
-                            <li><a href="#0" data-date="2021" class="cd-h-timeline__date">2021</a></li>
-                            <li><a href="#0" data-date="Present" class="cd-h-timeline__date">Present</a></li>
-                            <!-- other dates here -->
+                            <li><a href="#0" data-date="01/01/2018" class="cd-h-timeline__date cd-h-timeline__date--selected">2018</a></li>
+                            <li><a href="#0" data-date="01/01/2020" class="cd-h-timeline__date">2020</a></li>
+                            <li><a href="#0" data-date="01/01/2021" class="cd-h-timeline__date">2021</a></li>
+                            <li><a href="#0" data-date="01/01/2022" class="cd-h-timeline__date">Present</a></li>
+                            
                          </ol>
                          <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
-                      </div> <!-- .cd-h-timeline__line -->
-                   </div> <!-- .cd-h-timeline__dates -->
-             
-                </div> <!-- .cd-h-timeline__container -->
+                      </div> 
+                   </div> 
+                   <ul>
+                        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
+                        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
+                   </ul>
+                </div> 
              
                 <div class="cd-h-timeline__events">
                    <ol>
@@ -87,63 +92,47 @@
                             <p class="cd-h-timeline__event-description color-contrast-medium"> 
                             [Grade obtained: First Class Honours] Highlights:
                             <ul>
-                                <li>Dissertation on the correlation between UK Banking industry and gender diversity on Boards, using R for statstical analysis [80%]</li>
+                                <li>Thesis on the correlation between UK Banking industry and gender diversity on Boards, using R for statstical analysis [80%]</li>
                                 <li>Chairwoman at the Economics society (2019-2020)</li>
                                 <li>Faculty Representative (2019-2020)</li>
                                 <li>Financial Economics [73%], Business Analytics [75%], Microeconomics [85%]</li>
                             </ul>
                          </div>
                       </li>
-
+            
                       <li class="cd-h-timeline__event text-component">
                         <div class="cd-h-timeline__event-content container">
                             <h2 class="cd-h-timeline__event-title">MSc Corporate Finance | QMUL | London, UK</h2>
-                            <em class="cd-h-timeline__event-date">Sep 2016 - Jun 2020</em>
+                            <em class="cd-h-timeline__event-date">Sep 2020 - Sep 2021</em>
                             <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                            [Grade obtained: First Class Honours] Highlights:
+                            [Grade obtained: Distinction] Highlights:
                             <ul>
-                                <li>Dissertation on the correlation between UK Banking industry and gender diversity on Boards, using R for statstical analysis [80%]</li>
-                                <li>Chairwoman at the Economics society (2019-2020)</li>
-                                <li>Faculty Representative (2019-2020)</li>
-                                <li>Financial Economics [73%], Business Analytics [75%], Microeconomics [85%]</li>
+                                <li>Thesis on an Equity Valuation, using Bloomberg, Excel and Python for data analysis [80%]</li>
+                                <li>Lead Equity Analyst at QUMM Private Investment Fund</li>
+                                <li>Founder and President of the Filipino society</li>
+                                <li>Investment Management [85%], Financial Data Analytics [60%], Corporate finance [80%]</li>
                             </ul>
                          </div>
                       </li>
-             
-                      <!-- other descriptions here -->
+            
+                      <li class="cd-h-timeline__event text-component">
+                        <div class="cd-h-timeline__event-content container">
+                            <h2 class="cd-h-timeline__event-title">Trainee Full-stack Developer | Futureproof | London, UK</h2>
+                            <em class="cd-h-timeline__event-date">Sep 2020 - Sep 2021</em>
+                            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+                            Highlights:
+                            <ul>
+                                <li>13-week bootcamp covering the main areas of web development, including JavaScript, HTML/CSS, Databases, and Python</li>
+                                <li>Recently completed a 1-week group project using React to create a music app, using Jest to test</li>
+                                <li>List of my technology stack below</li>
+                            </ul>
+                         </div>
+                      </li>
                    </ol>
-                </div> <!-- .cd-h-timeline__events -->
-             </section>
-            <!--<div class="timelineCont">
-                <div class="circlesCont">
-                    <div id="eighteen"class="circlesTime"></div>
-                    <div class="circlesTime"></div>
-                    <div class="circlesTime"></div>
-                    <div class="circlesTime"></div>
-                </div>
-                <div class="dates">
-                    <li class="datesLi">
-                        <ul class="eighteen" value="Commercial Management Intern | Bosch | Abstatt, Germany">2018</ul>
-                        <ul class="twenty" value="BSc Politics and Economics | Aston University | Birmingham, UK">2020</ul>
-                        <ul class="twentyone" value="MSc Corporate Finance | QMUL | London">2021</ul>
-                        <ul class="present" value="Trainee Full-stack Developer | Futureproof">Present</ul>
-                    </li>
-                </div>    
-                    <div class="timelineLine"></div> 
-            </div>
-            
-            <div id="experiencesCont">
-                 <div id="eighteenCont">
-                    <h1 id="exTitle"></h1>
-                    <h4 id="years"></h4>
-                    <p id="exPara"></p>
-                </div>
-            </div> -->
-            
-
-    
+                </div> 
+            </section>
             <div class="tech">
-                <h1>My Technology Stack</h1>
+                <h1 class="mytech">My Technology Stack</h1>
                 <div class="techContainer">
                     <div class="techCard">
                         <img class ="techImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" value="GitHub" alt="github logo">
@@ -170,10 +159,10 @@
                         <img class ="techImg" src="https://res.cloudinary.com/go1/image/upload/v1524240326/ajyfsoxg1p4hambjgbxb.png" value="Excel VBA" alt="excel vba logo">
                     </div>
                     <div class="techCard">
-                        <img class ="techImg" src="" value="???" alt="github logo">
+                        <img class ="techImg" src="https://iconape.com/wp-content/files/zk/93042/svg/react.svg" value="React" alt="React">
                     </div>
                     <div class="techCard">
-                        <img class ="techImg" src="" value="???" alt="github logo">
+                        <img class ="techImg" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" value="Python" alt="python">
                     </div>
                     
                 </div>
@@ -193,23 +182,26 @@
         </div>
 
         <div id="sectionContact">
-            <h1 class="pagesh1Txt">Contact me</h1>
+            <h1 class="pagesh2Txt">Contact me</h1>
 
         </div>
 
-        <div class="navbar2 footer">
-            <img src="./img/zgj.png" alt="ZJG logo" class="logo2" title="ZJG logo">
+        <div class="navbar2 footer2">
+            <img src="assets/img/zgj.png" alt="ZJG logo" class="logo2" title="ZJG logo">
             <p class="footertxt">Zerhjosh Guzman</p>
-                <ul>
-                    <li><img class="logoimg" src="./img/gith.png" alt="Github logo" title="Github logo"></li>
-                    <li><img class="logoimg" src="./img/linkedin3.png" alt="Linkedin logo" title="Linkedin logo"></li>
-                    <li><img class="logoimg" src="./img/email.png" alt="Email logo" title="Email logo"></li>
+                <ul class="navbar3">
+                    <li><img class="logoimg" src="assets/img/gith.png" alt="Github logo" title="Github logo"></li>
+                    <li><img class="logoimg" src="assets/img/linkedin3.png" alt="Linkedin logo" title="Linkedin logo"></li>
+                    <li><img class="logoimg" src="assets/img/email.png" alt="Email logo" title="Email logo"></li>
                 </ul>
         </div>
 
 
 
 
-        <script src="js/index.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/swipe-content.js"></script> 
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
