@@ -156,12 +156,12 @@ button:hover {
     }
 }
 
-#sectionAbout {
+/*#sectionAbout {
     height: 100vh;
     background: rosybrown;
     display: inline-block;
     width: 100vw;
-}
+}*/
 
 #sectionProjects {
     height: 100vh;
