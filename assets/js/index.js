@@ -1,7 +1,9 @@
 //scroll seamlessly between sections
 
 
-//hover over
+
+
+//hover tech over
 const techContainer = document.querySelectorAll('.techContainer');
 const techName = document.querySelector('#techName');
 
@@ -10,4 +12,6 @@ techContainer.forEach(tech => {
         techName.textContent = e.target.getAttribute('value');
     });
 });
+
+
 
