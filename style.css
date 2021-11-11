@@ -251,7 +251,8 @@ button:hover {
 /*Section: about*/
 .dates {
     list-style: none;
-    padding-top: 20px;
+    padding-top: 30px;
+    
 }
 
 .datesLi {
@@ -260,6 +261,9 @@ button:hover {
     width: 67%;
     margin: auto;
     color: white;
+    margin-bottom: -18px;
+    z-index: 1;
+    
 }
 
 .timelineLine {
@@ -267,7 +271,9 @@ button:hover {
     margin:auto;
     height: 7px;
     background-color: black;
-    margin-top: -15px;
+    margin-bottom:-5px;
+    z-index: -1;
+    
 }
 
 .circlesCont {
@@ -275,14 +281,66 @@ button:hover {
     justify-content: space-between;
     width: 70%;
     margin: auto;
+    padding-top: 30px;
+    margin-bottom: -53px;
+  
 }
 
 .circlesTime {
-    border-radius: 50%;
-    width: 70px;
-    height: 25px;
+    border-radius: 45%;
+    width: 90px;
+    height: 30px;
     background-color: black;
+    cursor: pointer;
+}
 
+.eighteen {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.twenty {
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.twentyone {
+    margin-right: -14px;
+    cursor: pointer;
+}
+
+.present {
+    margin-right: -5px;
+    margin-bottom:3px;
+    cursor: pointer;
+}
+
+/*experiencee*/
+#experiencesCont {
+    max-height: 50vh;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 60px;
+    background-color: blue;
+}
+
+#exTitle {
+    font-size: 2rem;
+    color: green;
+    width: 100px;
+    height: 100px;
+}
+
+#years {
+    font-size: 10px;
+    color: white;
+}
+
+#exPara {
+    font-size: 0.8rem;
+    color: white;
 }
 
 /*section: about - tech*/
