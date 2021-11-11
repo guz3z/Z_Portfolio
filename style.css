@@ -247,100 +247,67 @@ button:hover {
     margin-top: 10px;
 }
 
-
-/*Section: about*/
-.dates {
-    list-style: none;
-    padding-top: 30px;
-    
+/*Section: about My experiences*/
+.cd-h-timeline__events {
+    position: relative;
 }
-
-.datesLi {
-    display: flex;
-    justify-content: space-between;
-    width: 67%;
-    margin: auto;
-    color: white;
-    margin-bottom: -18px;
-    z-index: 1;
-    
-}
-
-.timelineLine {
-    width: 80%;
-    margin:auto;
-    height: 7px;
-    background-color: black;
-    margin-bottom:-5px;
-    z-index: -1;
-    
-}
-
-.circlesCont {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-    padding-top: 30px;
-    margin-bottom: -53px;
   
+.cd-h-timeline__event {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
 }
-
-.circlesTime {
-    border-radius: 45%;
-    width: 90px;
-    height: 30px;
-    background-color: black;
-    cursor: pointer;
+  
+.cd-h-timeline__event--selected { 
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
 }
-
-.eighteen {
-    margin-left: 5px;
-    cursor: pointer;
+  
+.cd-h-timeline__event--enter-right, 
+  .cd-h-timeline__event--leave-right { 
+    animation-name: cd-enter-right;
 }
-
-.twenty {
-    margin-left: 4px;
-    cursor: pointer;
+  
+.cd-h-timeline__event--enter-left,  
+.cd-h-timeline__event--leave-left { 
+    animation-name: cd-enter-left;
 }
-
-.twentyone {
-    margin-right: -14px;
-    cursor: pointer;
+  
+.cd-h-timeline__event--leave-right, 
+.cd-h-timeline__event--leave-left {
+    animation-direction: reverse;
 }
-
-.present {
-    margin-right: -5px;
-    margin-bottom:3px;
-    cursor: pointer;
+  
+@keyframes cd-enter-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
-
-/*experiencee*/
-#experiencesCont {
-    max-height: 50vh;
-    height: 100%;
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 60px;
-    background-color: blue;
-}
-
-#exTitle {
-    font-size: 2rem;
-    color: green;
-    width: 100px;
-    height: 100px;
-}
-
-#years {
-    font-size: 10px;
-    color: white;
-}
-
-#exPara {
-    font-size: 0.8rem;
-    color: white;
+  
+@keyframes cd-enter-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 /*section: about - tech*/
