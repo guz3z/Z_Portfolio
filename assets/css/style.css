@@ -156,12 +156,12 @@ button:hover {
     }
 }
 
-/*#sectionAbout {
+#sectionAbout {
     height: 100vh;
-    background: rosybrown;
+    background: white;
     display: inline-block;
     width: 100vw;
-}*/
+}
 
 #sectionProjects {
     height: 100vh;
@@ -178,7 +178,7 @@ button:hover {
     width: 100vw;
 }
 
-.footer {
+.footer2 {
     height:10vh;
     width: 100vw;
     display: inline-block;
@@ -204,6 +204,11 @@ button:hover {
     justify-content: space-between;
 }
 
+.navbar3 {
+    display: flex;
+}
+
+
 .logo2 {
     width: 70px;
     height: 70px;
@@ -213,7 +218,8 @@ button:hover {
 
 .navbar2 ul li {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin-right: 120px;
     position: relative;
 
@@ -238,7 +244,7 @@ button:hover {
 .footertxt {
     color: white;
     font-family: sans-serif;
-    margin-right: 600px;
+    margin-right: 500px;
 }
 
 .pagesh1Txt {
