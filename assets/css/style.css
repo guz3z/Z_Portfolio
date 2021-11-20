@@ -99,9 +99,8 @@
 
 
 
-button {
-    width: 200px;
-    padding: 15px 0;
+#sectionHome a {
+    padding: 10px 40px;
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
@@ -111,11 +110,14 @@ button {
     color: white;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
+    text-decoration: none;
 
 }
 
-span {
+
+
+
+#sectionHome span {
     background: rosybrown;
     height: 100%;
     width: 0;
@@ -127,11 +129,11 @@ span {
     transition: 0.5s;
 }
 
-button:hover span {
+#sectionHome a:hover span {
     width: 100%;
 }
 
-button:hover {
+#sectionHome a:hover {
     border: none;
 }
 
