@@ -381,3 +381,58 @@ button:hover {
     color:rosybrown;
 
 }
+
+/*Projects*/
+
+.swiper {
+    margin-top: 30px;
+    height: 80vh;
+    width: 80vw;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-scrollbar, .swiper-pagination-bullet {
+    color: rosybrown;
+}
+
+.swiper-slide {
+    background-color: royalblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.proj-img-cont {
+    height: 30vh;
+    width: 35vw;
+    background-color: white;
+    margin: auto;
+}
+
+.description {
+    display: block;
+    text-align: center;
+    padding: 60px;
+}
+
+.proj-links {
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    background-color: seagreen;
+}
+
+.link-gh, .link-site {
+    width: 100px;
+    height: 50px;
+    background-color: rosybrown;
+    border-radius: 10px;
+    margin: 0 10px;
+}
