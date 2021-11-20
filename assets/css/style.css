@@ -407,16 +407,17 @@ button:hover {
 }
 
 .proj-img-cont {
-    height: 30vh;
+    height: 37vh;
     width: 35vw;
     background-color: white;
     margin: auto;
+    overflow: hidden;
 }
 
 .description {
     display: block;
     text-align: center;
-    padding: 60px;
+    padding: 30px;
 }
 
 .description li {
