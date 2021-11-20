@@ -395,7 +395,6 @@ button:hover {
 }
 
 .swiper-slide {
-    background-color: royalblue;
     justify-content: center;
     align-items: center;
 }
@@ -420,19 +419,41 @@ button:hover {
     padding: 60px;
 }
 
+.description li {
+    list-style-type:disc;
+    color: white;
+    margin: auto;
+    list-style-position: inside;
+}
+
 .proj-links {
     text-align: center;
     cursor: pointer;
     margin: auto;
     justify-content: center;
     display: flex;
-    background-color: seagreen;
 }
 
 .link-gh, .link-site {
     width: 100px;
-    height: 50px;
+    height: 60px;
     background-color: rosybrown;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0 10px;
 }
+
+.link-gh a, .link-site a, .link-gh i, .link-site i  {
+    color: white;
+    font-size: 1.1rem;
+    margin: 20px 2px;
+    text-decoration: none;
+    list-style-type: circle;
+    list-st
+    
+}
+
+.link-gh:hover, .link-site:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgb(201, 175, 175);
+}
+
