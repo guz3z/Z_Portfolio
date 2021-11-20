@@ -362,6 +362,10 @@ button:hover {
     
 }
 
+.techCard:hover {
+    transform: scale(1.3);
+}
+
 .techImg {
     width: 45px;
     height: 45px;
