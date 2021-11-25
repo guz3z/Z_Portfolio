@@ -455,12 +455,29 @@ button {
     margin: 20px 2px;
     text-decoration: none;
     list-style-type: circle;
-    list-st
     
 }
 
 .link-gh:hover, .link-site:hover {
     transform: scale(1.05);
     box-shadow: 1px 1px 10px rgb(201, 175, 175);
+}
+
+.contact-form {
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    margin: auto;
+}
+
+.form-group {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
 }
 

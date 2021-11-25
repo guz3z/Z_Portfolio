@@ -13,5 +13,10 @@ techContainer.forEach(tech => {
     });
 });
 
+//transfer to github
+function githubRoute(){
+    location.href = "www.github.com/guz3z"
+}
+
 
 
