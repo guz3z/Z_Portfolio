@@ -15,7 +15,7 @@ techContainer.forEach(tech => {
 
 //transfer to github
 function githubRoute(){
-    location.href = "www.github.com/guz3z"
+    window.location.href = "www.github.com/guz3z"
 }
 
 
