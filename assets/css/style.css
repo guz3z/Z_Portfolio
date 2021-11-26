@@ -466,7 +466,7 @@ button {
 /*contact form*/
 
 .contact-form {
-    padding: 20px 0;
+    padding: 10px 0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -507,17 +507,37 @@ button {
 }
 
 .contact-form button{
-    width: 200px;
-    padding: 10px 40px;
-    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rosybrown;
+    z-index: 2;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 7px rgb(145, 92, 92);
+}
+
+.contact-form span {
+    background: rosybrown;
+    height: 100%;
+    width: 0;
     border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rosybrown;
-    background: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+    transition: 0.3s;
     color: white;
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
+}
+
+.contact-form button:hover span {
+    width: 100%;
+}
+
+.contact-form button:hover {
+    border: none;
+    z-index: 1;
+    color: white;
 }
 
 .form-group textarea {
@@ -528,3 +548,25 @@ button {
     box-shadow: 1px 1px 7px rgb(145, 92, 92);
 }
 
+#success-msg {
+    text-align: center;
+    margin-top: 5px;
+    animation: status 3s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 1;
+        pointer-events: none;
+    }
+
+
+}

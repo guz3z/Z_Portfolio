@@ -19,4 +19,26 @@ function githubRoute(){
 }
 
 
+//for the contact form 
+var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("success-msg");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Message Sent! Thank You";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your message"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
 

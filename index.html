@@ -259,7 +259,7 @@
         <div id="sectionContact">
             <h1 class="pagesh2Txt">Contact me</h1>
             <div class="contact-form">
-                <form>
+                <form action="https://formspree.io/f/xoqraeop" method="POST" id="my-form">
                     <div class="form-group">
                         <label for="first-name">First name</label>
                         <input type="text" id="firstName" name="first-name" required>
@@ -276,7 +276,8 @@
                         <label for="message">Message</label>
                         <textarea cols="30" rows="7" id="message" name="message" maxlength="300" placeholder="Max character length: 300"required></textarea>
                     </div>
-                    <button type="submit" id="submitBtn">Submit</button>
+                    <button type="submit" id="submitBtn"><span></span>Submit</button>
+                    <div id="success-msg"></div>
                 </form>
             </div>
 
