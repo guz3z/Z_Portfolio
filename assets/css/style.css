@@ -487,15 +487,44 @@ button {
     font-size: 1.5rem;
 }
 
-.form-group input {
+.form-group input{
     color: black;
-    width: 300px;
+    width: 40vw;
     border-style: none;
-    height: 30px;
-    padding: 10px 5px;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgb(145, 92, 92);
+    margin-bottom: 9px;
 }
 
 .form-group input:focus {
     outline:none;
+}
+
+.form-group textarea:focus {
+    outline:none;
+}
+
+.contact-form button{
+    width: 200px;
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rosybrown;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.form-group textarea {
+    border-style: none;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 10px;
+    box-shadow: 1px 1px 7px rgb(145, 92, 92);
 }
 
