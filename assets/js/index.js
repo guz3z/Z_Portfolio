@@ -18,6 +18,11 @@ function githubRoute(){
     window.location.href = "https://www.github.com/guz3z"
 }
 
+function linkedinRoute(){
+    window.location.href = "https://www.linkedin.com/zerh-guzman"
+}
+
+
 
 //for the contact form 
 var form = document.getElementById("my-form");
